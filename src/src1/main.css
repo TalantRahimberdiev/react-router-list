@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+}
+
+a {
+  text-decoration: underline solid black 1px;
+}
